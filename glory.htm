@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .card-container{
+        display: grid;
+        grid-template-columns:repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card-container .card{
+        border: 2px solid black;
+        width: 500px;
+        background: blue;
+    }
+</style>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <p>card 1</p>
+        </div>
+        <div class="card">
+            <p>card 2</p>
+        </div>
+        <div class="card">
+            <p>card 3</p>
+        </div>
+        <div class="card">
+            <p>card 4</p>
+        </div>
+        <div class="card">
+            <p>card 5</p>
+        </div>
+        <div class="card">
+            <p>card 6</p>
+        </div>
+    </div>
+</body>
+</html>

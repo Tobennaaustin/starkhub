@@ -1,0 +1,5 @@
+@media screen and (max-width:699px){
+    .row{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

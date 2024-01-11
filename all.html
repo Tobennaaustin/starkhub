@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResourceHub/All</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="all.html">ResourceHub</a></li>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item has-submenu">
+                    <a tabindex="0">Categories</a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="#">All</a></li>
+                        <li class="subitem"><a href="past.html">Past Questions</a></li>
+                        <li class="subitem"><a href="article.html">Articles</a></li>
+                        <li class="subitem"><a href="courses.html">Courses</a></li>
+                    </ul>
+                </li>
+
+                </li>
+                <li class="item button secondary"><a href="https://forms.gle/juScgwvomiCXvERF7">Submit Resource</a></li>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="maintxt">
+            <div class="maintxt_all">
+                <h1>Opening up all the doors to ResourceHub's public lybrary</h1>
+                <!-- <p>Read all about the public Library, our acquisition of all your resources, and how this helps shape the future of accessibility education and community.</p> -->
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Filter...." id="searchInput" oninput="filterCards()">
+        </div>
+
+        <div class="empty" id="noResultsMessage" style="display: none;">
+            <img src="images/undraw_not_found_re_bh2e.svg" alt="">
+            <p>Oops, nothing to find here</p>
+            <a href="https://forms.gle/juScgwvomiCXvERF7" class="footbtn">Submit Resource</a>
+        </div>
+    </main>
+
+    <section>
+        <div class="row" id="cardContainer"> 
+            <!-- Your card elements go here -->
+            <div class="column card" data-search="cyber security">
+                <p style="background-color: #381fd1; color: white; padding: 5px; float: right; margin-top: 0; border-top-right-radius: 10px;">NEW</p>
+                <div class="cardcontent">
+                    <img src="images/card.svg" alt="">
+                    <div class="cardtext">
+                        <p><a href="#">Course</a></p>
+                        <h3><a href="https://www.udemy.com/share/108Y783@yJQZaUVxC4N5KOcEdS-3E9OLynnrAYkWbXy7ya_RUQqbYgBJp-c87DSeYcOkK_PHgA==/">Cyber Security</a></h3>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="column card" data-search="wordpress">
+                <p style="background-color: #381fd1; color: white; padding: 5px; float: right; margin-top: 0; border-top-right-radius: 10px;">NEW</p>
+                <div class="cardcontent">
+                    <img src="images/card.svg" alt="">
+                    <div class="cardtext">
+                        <p><a href="#">Course</a></p>
+                        <h3><a href="https://www.udemy.com/share/101GDi3@KvIqFEoX43HqkAfVAH1ZIWU6KVSxb5_SSIPI9O2la6pZ5oNsQPKTQsH0nDjzdGJbtA==/">Wordpress</a></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column card" data-search="figma">
+                <p style="background-color: #381fd1; color: white; padding: 5px; float: right; margin-top: 0; border-top-right-radius: 10px;">NEW</p>
+                <div class="cardcontent">
+                    <img src="images/card.svg" alt="">
+                    <div class="cardtext">
+                        <p><a href="#">Course</a></p>
+                        <h3><a href="https://www.udemy.com/share/108r3O3@qf13MdV-66VWT5eo8N6RmXJtsnehu1RkUM4CkjDZYYyzcjalGR7Z408j-PnT6sQeoA==/">Figma</a></h3>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="column card" data-search="web development">
+                <p style="background-color: #381fd1; color: white; padding: 5px; float: right; margin-top: 0; border-top-right-radius: 10px;">NEW</p>
+                <div class="cardcontent">
+                    <img src="images/card.svg" alt="">
+                    <div class="cardtext">
+                        <p><a href="#">Course</a></p>
+                        <h3><a href="https://www.udemy.com/share/101rgE3@ZnESY8aA3YoRAZj_cry3rOL0Z6VihEjuj4v7kts5tz3RuFsNkwE6eR24By9YSTK2OA==/">Web development</a></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column card" data-search="app development">
+                <p style="background-color: #381fd1; color: white; padding: 5px; float: right; margin-top: 0; border-top-right-radius: 10px;">NEW</p>
+                <div class="cardcontent">
+                    <img src="images/card.svg" alt="">
+                    <div class="cardtext">
+                        <p><a href="#">Course</a></p>
+                        <h3><a href="https://www.udemy.com/share/107VjG3@vLpRC01i-nh57L2kGd3x4jgmjj-46JWpuT9k3kdJksqPm4J_ph_rCj3FDnfWCoigmA==/">App development</a></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column card" data-search="app development">
+                <p style="background-color: #381fd1; color: white; padding: 5px; float: right; margin-top: 0; border-top-right-radius: 10px;">NEW</p>
+                <div class="cardcontent">
+                    <img src="images/card.svg" alt="">
+                    <div class="cardtext">
+                        <p><a href="#">Course</a></p>
+                        <h3><a href="https://www.udemy.com/share/107VjG3@vLpRC01i-nh57L2kGd3x4jgmjj-46JWpuT9k3kdJksqPm4J_ph_rCj3FDnfWCoigmA==/">App development</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot row">
+            <div class="column">
+                <ul>
+                    <li style="font-weight: 900;">Categories</li>
+                    <li><a href="all.html">All</a></li>
+                    <li><a href="past.html">Past questions</a></li>
+                    <li><a href="article.html">Articles</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <ul>
+                    <li style="font-weight: 900;">Company</li>
+                    <li>Privacy policy</li>
+                    <li>Support us</li>
+                    <li>Terms of services</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <a href="https://forms.gle/juScgwvomiCXvERF7" class="footbtn">Submit Resource</a>
+            </div>
+
+            <div class="column">
+                <h4 style="color: #fedb63;">MADE REMOTELY WITH LOVE BY GDSC Crawford University Chapter. COPYRIGHT 2024</h4>
+            </div>
+
+
+        </div>
+        <p style="color: white; font-size: 10px; text-align: center;">powered by <a href="https://my-portfolio-phi-seven-36.vercel.app/" style="text-decoration: underline; color: yellow;">DeeCode</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

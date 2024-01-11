@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Anek Telugu');
+@import url('https://fonts.googleapis.com/css?family=Candal');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  :root{
+    --brightblue:#381fd1;
+    --creame:#f6f6eb;
+    --white:#ffffff;
+    --darkblue:#11284b;
+    --brightash:#f3f2fc;
+    --lightblack:#4b4b4e;
+    --headingfontfam: 'Candal';
+    --bodyfontfam:'Anek Telugu';
+  }
+  html{
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust:100%;
+    font-feature-settings:normal;
+  }
+.warpper {
+    margin: 20px;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0px 2px;
+    background: var(--darkblue);
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0 0.5rem 0.8rem #00000080;
+    font-family: var(--bodyfontfam);
+  }
+  .panels {
+    min-height: 200px;
+    overflow: hidden;
+    
+  }
+  
+  .panel {
+    display: none;
+    animation: fadein 0.8s;
+    margin-top: 20px;
+    font-family: var(--bodyfontfam);
+  }
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  .radio {
+    display: none;
+  }
+  
+  #one:checked ~ .panels #one-panel,
+  #two:checked ~ .panels #two-panel,
+  #three:checked ~ .panels #three-panel,
+  #four:checked ~ .panels #four-panel,
+  #five:checked ~ .panels #five-panel {
+    display: block;
+  }
+  
+  #one:checked ~ .tabs #one-tab,
+  #two:checked ~ .tabs #two-tab,
+  #three:checked ~ .tabs #three-tab,
+  #four:checked ~ .tabs #four-tab,
+  #five:checked ~ .tabs #five-tab {
+    background: #fff;
+    color: #000;
+    border-top: 3px solid #32557f;
+  }
